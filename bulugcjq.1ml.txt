@@ -1,0 +1,18 @@
+﻿
+Añadido scrolling
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'project/master'.
+#
+# Changes to be committed:
+#	modified:   project/Assets/Scenes/main.unity
+#	new file:   project/Assets/Scripts/Renderscript.cs
+#	new file:   project/Assets/Scripts/Renderscript.cs.meta
+#	new file:   project/Assets/Scripts/Scrollingscript.cs
+#	new file:   project/Assets/Scripts/Scrollingscript.cs.meta
+#	new file:   project/Assets/Textures/background.png
+#	new file:   project/Assets/Textures/background.png.meta
+#
+
