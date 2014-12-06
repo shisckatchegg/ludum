@@ -118,7 +118,7 @@ GameObject:
   - 61: {fileID: 76304691}
   m_Layer: 0
   m_Name: Boton
-  m_TagString: Trap
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1014,7 +1014,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1b6f3e4aceda81b4fa8e9c144de33fe0, type: 2}
       propertyPath: m_TagString
-      value: Trap
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b6f3e4aceda81b4fa8e9c144de33fe0, type: 2}
