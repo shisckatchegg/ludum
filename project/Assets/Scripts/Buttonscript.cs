@@ -14,17 +14,21 @@ public class Buttonscript : MonoBehaviour {
 	
 	void OnMouseDown(){
 		GameObject[] listaTrampas;
-		GameObject 	aux;
-		Trampscript script;
+		GameObject aux;
 		
-		listaTrampas=GameObject.FindGameObjectsWithTag("Trampa");
-		aux=listaTrampas[0];
-		foreach(GameObject trampa in listaTrampas){
-			if(trampa.transform.position.x<aux.transform.position.x){
-				aux=trampa;
+		listaTrampas=GameObject.FindGameObjectsWithTag("Trap");
+		if(listaTrampas!=null){
+			aux=listaTrampas[0];
+			foreach(GameObject trampa in listaTrampas){
+				if(trampa.transform.position.x<aux.transform.position.x){
+					aux=trampa;
+				}
 			}
+			
+			aux.GetComponent<Trampscript>().setActivate(true);
 		}
-		script=aux.GetComponent("Trampscript") as Trampscript;
-		script.active=true;
+		else{
+			Debug.Log("No hay trampas");
+		}
 	}
 }

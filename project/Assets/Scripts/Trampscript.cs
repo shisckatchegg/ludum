@@ -24,4 +24,8 @@ public class Trampscript : MonoBehaviour {
 	void FixedUpdate() {
 		rigidbody2D.velocity = movement;
 	}
+	
+	public void setActivate(bool value){
+		activate=value;
+	}
 }
