@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TrampScript : MonoBehaviour {
+public class Trampscript : MonoBehaviour {
 
 	public bool activate;
 
