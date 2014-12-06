@@ -9,23 +9,22 @@ public class Buttonscript : MonoBehaviour {
 
 	// Update is called once per frame
     void Update () {
-		if (Input.GetMouseButtonDown(0)) {
-			Debug.Log("Pressed left click, casting ray.");
-			CastRay(gameObject);
-		}
+		
 	}
-
-
-
-	bool CastRay(GameObject objeto) {
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, Mathf.Infinity);
-		if (hit.collider.gameObject==objeto){
-			Debug.Log("Click en boton");
-			return true;
-        }
-		else 
-			Debug.Log("No Click en boton");
-			return false;
-    }    
+	
+	void OnMouseDown(){
+		GameObject[] listaTrampas;
+		GameObject 	aux;
+		Trampscript script;
+		
+		listaTrampas=GameObject.FindGameObjectsWithTag("Trampa");
+		aux=listaTrampas[0];
+		foreach(GameObject trampa in listaTrampas){
+			if(trampa.transform.position.x<aux.transform.position.x){
+				aux=trampa;
+			}
+		}
+		script=aux.GetComponent("Trampscript") as Trampscript;
+		script.active=true;
+	}
 }
