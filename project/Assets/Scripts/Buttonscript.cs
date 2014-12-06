@@ -25,10 +25,7 @@ public class Buttonscript : MonoBehaviour {
 				}
 			}
 			
-			aux.GetComponent<Trampscript>().setActivate(true);
-		}
-		else{
-			Debug.Log("No hay trampas");
+			aux.GetComponent<Trampscript>().activate=true;
 		}
 	}
 }
