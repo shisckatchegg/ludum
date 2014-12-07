@@ -156,7 +156,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ed5145d2ff2a19e42ba7bf146ef51ae7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3ca45598f1a88c4bba273a9c92890d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &76304690
 MonoBehaviour:
@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f758f9b48223552429493935df18d187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pulsado: {fileID: 21300002, guid: c3ca45598f1a88c4bba273a9c92890d7, type: 3}
+  sinPulsar: {fileID: 21300000, guid: c3ca45598f1a88c4bba273a9c92890d7, type: 3}
 --- !u!61 &76304691
 BoxCollider2D:
   m_ObjectHideFlags: 0

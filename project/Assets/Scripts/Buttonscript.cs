@@ -3,13 +3,17 @@ using System.Collections;
 
 public class Buttonscript : MonoBehaviour {
 	// Use this for initialization
+	public Sprite pulsado;
+    public Sprite sinPulsar;
 	void Start () { }
 
 	// Update is called once per frame
     void Update () {
+		
 	}
 
 	void OnMouseDown() {
+		GetComponent<SpriteRenderer>().sprite=pulsado;
 		GameObject[] listaTrampas;
 		GameObject aux;
 		listaTrampas = GameObject.FindGameObjectsWithTag("Trap");
@@ -23,5 +27,9 @@ public class Buttonscript : MonoBehaviour {
 
 			aux.GetComponent<Trampscript>().activate = true;
 		}	
+	}
+	
+	void OnMouseUp() {
+		GetComponent<SpriteRenderer>().sprite=sinPulsar;
 	}
 }
