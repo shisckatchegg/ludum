@@ -45,7 +45,8 @@ public class Zombiescript : MonoBehaviour {
 	private IEnumerator Die()
 	{
 		animator.SetBool("ifHit", true );
-		yield return new WaitForSeconds(1);
+		SoundeffectsHelper.Instance.MakeZombieDeathSound();
+		yield return new WaitForSeconds(0.2f);
 		Destroy(gameObject);
 	}
 }
