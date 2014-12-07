@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class Zombiescript : MonoBehaviour {
-	
 	private Animator animator;
 	// Use this for initialization
 	void Start () {
@@ -16,12 +15,13 @@ public class Zombiescript : MonoBehaviour {
 			Destroy(this.gameObject);
 		}
 	}*/
-	
+
 	void OnTriggerEnter2D(Collider2D otherCollider)
 	{
 		Trampscript trampa = otherCollider.gameObject.GetComponent<Trampscript> ();
 		if (trampa != null) {
 			Destroy(trampa.gameObject);
+			Specialeffectscript.Instance.Explosion(transform.position);
 			SoundeffectsHelper.Instance.MakeHitSound();
 			StartCoroutine(Die());
 		}
