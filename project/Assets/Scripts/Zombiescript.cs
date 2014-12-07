@@ -3,9 +3,11 @@ using System.Collections;
 
 public class Zombiescript : MonoBehaviour {
 	private Animator animator;
+	private GameObject counter;
 	// Use this for initialization
 	void Start () {
 		animator = gameObject.GetComponent<Animator>();
+		counter=GameObject.Find("killCount");
 	}
 
 	/*void OnCollisionEnter2D(Collision2D objeto) {
@@ -23,6 +25,7 @@ public class Zombiescript : MonoBehaviour {
 			Destroy(trampa.gameObject);
 			Specialeffectscript.Instance.Explosion(transform.position);
 			SoundeffectsHelper.Instance.MakeHitSound();
+			counter.GetComponent<Killedcounterscript>().killed++;
 			StartCoroutine(Die());
 		}
 	}

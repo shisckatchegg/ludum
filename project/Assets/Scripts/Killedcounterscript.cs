@@ -1,19 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Countdownscript : MonoBehaviour {
-	public float timer=300;
-	
+public class Killedcounterscript : MonoBehaviour {
+	public int killed;
+
 	// Use this for initialization
 	void Start () {
-	
+		killed=0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		timer=timer-Time.deltaTime;
-		guiText.text = timer.ToString("0");
+		guiText.text = killed.ToString("0");
 	}
-	
-	
 }
