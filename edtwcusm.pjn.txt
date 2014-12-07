@@ -1,0 +1,28 @@
+﻿
+Arreglada escena principal
+
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'project/master'.
+#
+# Changes to be committed:
+#	modified:   project/Assets/Prefabs/Mesa.prefab
+#	modified:   project/Assets/Prefabs/Suelo.prefab
+#	modified:   project/Assets/Prefabs/TrampaTecho.prefab
+#	modified:   project/Assets/Prefabs/Zombie.prefab
+#	modified:   project/Assets/Scenes/main.unity
+#	new file:   project/Assets/Scripts/Borradoscript.cs
+#	new file:   project/Assets/Scripts/Borradoscript.cs.meta
+#	modified:   project/Assets/Scripts/Buttonscript.cs
+#	modified:   project/Assets/Scripts/Trampscript.cs
+#	modified:   project/Assets/Scripts/Zombiescript.cs
+#	new file:   project/Assets/Textures/Pantalla.png
+#	new file:   project/Assets/Textures/Pantalla.png.meta
+#
+# Changes not staged for commit:
+#	deleted:    project/Assets/Scripts/Renderscript.cs.meta
+#
+

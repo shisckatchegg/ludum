@@ -3,11 +3,9 @@ using System.Collections;
 
 public class Zombiescript : MonoBehaviour {
 	
-	private bool hasSpawn;
 	private Animator animator;
 	// Use this for initialization
 	void Start () {
-		hasSpawn = false;
 		animator = gameObject.GetComponent<Animator>();
 	}
 
@@ -29,17 +27,7 @@ public class Zombiescript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (hasSpawn == false) {//Aparecen fuera de pantalla
-			if (renderer.IsVisibleFrom (Camera.main)) {
-				hasSpawn = true;
-			}
-		}
-		else {//Una vez entran en pantalla, si salen se borran a los 15 segundos
-			if (renderer.IsVisibleFrom (Camera.main) == false) {
-				Destroy(this.gameObject, 15);
-			}
-		}	
+	void Update () {	
 	}
 	
 	private IEnumerator Die()
