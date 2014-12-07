@@ -22,6 +22,7 @@ public class Zombiescript : MonoBehaviour {
 		Trampscript trampa = otherCollider.gameObject.GetComponent<Trampscript> ();
 		if (trampa != null) {
 			Destroy(trampa.gameObject);
+			SoundeffectsHelper.Instance.MakeHitSound();
 			StartCoroutine(Die());
 		}
 	}
