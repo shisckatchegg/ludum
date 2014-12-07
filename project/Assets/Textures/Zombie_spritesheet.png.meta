@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: c9d0ba2cefcd83541b367b73f0d706f9
+guid: 5f60ebc1258de284588e2fcd2f2cd646
 TextureImporter:
   fileIDToRecycleName:
     21300000: Zombie_spritesheet_0
     21300002: Zombie_spritesheet_1
     21300004: Zombie_spritesheet_2
+    21300006: Zombie_spritesheet_3
+    21300008: Zombie_spritesheet_4
+    21300010: Zombie_spritesheet_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -37,7 +40,7 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 1
+  alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
@@ -71,6 +74,36 @@ TextureImporter:
         serializedVersion: 2
         x: 80
         y: 80
+        width: 40
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Zombie_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Zombie_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Zombie_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
         width: 40
         height: 80
       alignment: 0
