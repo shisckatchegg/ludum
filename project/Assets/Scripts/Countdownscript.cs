@@ -12,7 +12,7 @@ public class Countdownscript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timer=timer-Time.deltaTime;
-		guiText.text = timer.ToString("F0");
+		guiText.text = timer.ToString("0");
 	}
 	
 	
