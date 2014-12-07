@@ -1,0 +1,36 @@
+﻿
+Se incluye spawner de trampas
+	Las trampas una vez spawnean, desaparecen al salir de pantalla o al chocar con un zombi
+Se incluye spawner de zombies
+	Los zombis desaparecen una vez chocan con una trampa o permanecen fuera de pantalla 15 segundos
+Los scripts Player y movement eran redundantes, el prefab de zombi y el de plataforma ya no los llevan
+El script de scrolling se encarga del movimiento
+El zombi ya no esta linkado a la camara, no hace falta
+Ajustadas velocidades del zombi
+Incluido overlay de la pantalla para ir haciendose a una idea de como distribuir elementos
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'project/master'.
+#
+# Changes to be committed:
+#	modified:   project/Assets/Prefabs/Suelo.prefab
+#	modified:   project/Assets/Prefabs/TrampaTecho.prefab
+#	new file:   project/Assets/Prefabs/Zombie.prefab
+#	new file:   project/Assets/Prefabs/Zombie.prefab.meta
+#	modified:   project/Assets/Scenes/main.unity
+#	renamed:    project/Assets/Scripts/Renderscript.cs -> project/Assets/Scripts/Rendererscript.cs
+#	new file:   project/Assets/Scripts/Rendererscript.cs.meta
+#	new file:   project/Assets/Scripts/Spawnerscript.cs
+#	new file:   project/Assets/Scripts/Spawnerscript.cs.meta
+#	modified:   project/Assets/Scripts/Trampscript.cs
+#	modified:   project/Assets/Scripts/Zombiescript.cs
+#	new file:   project/Assets/Textures/pantallaOverlay.png
+#	new file:   project/Assets/Textures/pantallaOverlay.png.meta
+#
+# Changes not staged for commit:
+#	deleted:    project/Assets/Scripts/Renderscript.cs.meta
+#
+
