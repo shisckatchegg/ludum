@@ -8,14 +8,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 61: {fileID: 6100000}
-  - 114: {fileID: 11400000}
-  - 50: {fileID: 5000000}
-  - 114: {fileID: 11400002}
   - 212: {fileID: 21200000}
+  - 50: {fileID: 5000000}
+  - 61: {fileID: 6100000}
+  - 114: {fileID: 11400004}
+  - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: TrampaTecho
-  m_TagString: Trap
+  m_Name: Zombie
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .826179028, y: .540123522, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -40,7 +40,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 20
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -54,23 +54,10 @@ BoxCollider2D:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: .211219877, y: .103658915}
-  m_Center: {x: -.00896346569, y: -.00896322727}
+  m_IsTrigger: 0
+  m_Size: {x: .186632693, y: .593569279}
+  m_Center: {x: -.0200507641, y: -.0668356419}
 --- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59955257917434646bed154ac27bb348, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activate: 0
-  speed: {x: 3, y: 6}
---- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -81,10 +68,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1781aabfa87ff4d88d211178366639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 4, y: 4}
-  direction: {x: -1, y: 0}
+  speed: {x: 1.10000002, y: 1}
+  direction: {x: 1, y: 0}
   isLinkedToCamera: 0
   isLooping: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9228f0f14dc1ee3478de4e307eef4b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -106,7 +104,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 2d78ea90747377f49ac8bf189cda1e62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7724411c7eccc0439f365d0f0740c2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
