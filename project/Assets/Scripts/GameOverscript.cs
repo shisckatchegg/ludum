@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameOverscript : MonoBehaviour{
-	
-	void Update () {
-		const int buttonWidth = 120;
-		const int buttonHeight = 60;
-		
-		if (
+public class GameOverscript : MonoBehaviour {
+
+	const int buttonWidth = 120;
+	const int buttonHeight = 60;
+
+	void Update (){
+					Debug.Log("ENTRA?");
+		if (Input.GetKeyDown ("escape")) {
+			Debug.Log("SALE?");
+			if (
 			GUI.Button(
 			// Center in X, 1/3 of the height in Y
 			new Rect(
@@ -18,13 +21,12 @@ public class GameOverscript : MonoBehaviour{
 			),
 			"Retry!"
 			)
-			)
-		{
-			// Reload the level
-			Application.LoadLevel("main");
-		}
-		
-		if (
+			) {
+				// Reload the level
+				Application.LoadLevel("main");
+			}
+
+			if (
 			GUI.Button(
 			// Center in X, 2/3 of the height in Y
 			new Rect(
@@ -35,18 +37,17 @@ public class GameOverscript : MonoBehaviour{
 			),
 			"Back to menu"
 			)
-			)
-		{
-			// Reload the level
-			Application.LoadLevel("Menu");
+			){
+				// Reload the level
+				Application.LoadLevel("Menu");
+			}
+				
 		}
 	}
 	
 	
 	void OnGUI()
 	{
-		const int buttonWidth = 120;
-		const int buttonHeight = 60;
 		
 		if (
 			GUI.Button(
