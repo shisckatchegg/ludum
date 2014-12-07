@@ -4,9 +4,11 @@ using System.Collections;
 public class Zombiescript : MonoBehaviour {
 	
 	private bool hasSpawn;
+	private Animator animator;
 	// Use this for initialization
 	void Start () {
 		hasSpawn = false;
+		animator = gameObject.GetComponent<Animator>();
 	}
 
 	/*void OnCollisionEnter2D(Collision2D objeto) {
@@ -22,7 +24,7 @@ public class Zombiescript : MonoBehaviour {
 		Trampscript trampa = otherCollider.gameObject.GetComponent<Trampscript> ();
 		if (trampa != null) {
 			Destroy(trampa.gameObject);
-			Destroy (this.gameObject);
+			StartCoroutine(Die());
 		}
 	}
 	
@@ -38,5 +40,12 @@ public class Zombiescript : MonoBehaviour {
 				Destroy(this.gameObject, 15);
 			}
 		}	
+	}
+	
+	private IEnumerator Die()
+	{
+		animator.SetBool("ifHit", true );
+		yield return new WaitForSeconds(1);
+		Destroy(gameObject);
 	}
 }
