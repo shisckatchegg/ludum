@@ -2,11 +2,9 @@
 using System.Collections;
 
 public class Zombiescript : MonoBehaviour {
-	private Animator animator;
 	private GameObject counter;
 	// Use this for initialization
 	void Start () {
-		animator = gameObject.GetComponent<Animator>();
 		counter=GameObject.Find("killCount");
 	}
 
@@ -36,7 +34,6 @@ public class Zombiescript : MonoBehaviour {
 	
 	private IEnumerator Die()
 	{
-		animator.SetBool("ifHit", true );
 		SoundeffectsHelper.Instance.MakeZombieDeathSound();
 		yield return new WaitForSeconds(0.2f);
 		Destroy(gameObject);
