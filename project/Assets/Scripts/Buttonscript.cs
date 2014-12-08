@@ -17,10 +17,10 @@ public class Buttonscript : MonoBehaviour {
 		GameObject[] listaTrampas;
 		GameObject aux;
 		listaTrampas = GameObject.FindGameObjectsWithTag("Trap");
-		if(listaTrampas.Length != 0) {
+		if(listaTrampas.Length > 0) {
 			aux = listaTrampas[0];
 			foreach(GameObject trampa in listaTrampas) {
-				if(renderer.IsVisibleFrom (Camera.main) && trampa.transform.position.x<aux.transform.position.x) {
+				if(trampa.renderer.IsVisibleFrom (Camera.main) && trampa.transform.position.x < aux.transform.position.x) {
 					aux = trampa;
 				}
 			}
