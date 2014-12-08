@@ -499,7 +499,7 @@ MonoBehaviour:
   spawnTime: 3
   spawnDelay: 2
   traps:
-  - {fileID: 100000, guid: d1b6602e335557141be7701ee35afd2c, type: 2}
+  - {fileID: 100000, guid: 3dc0c6baf24147341bdff376556b9ae0, type: 2}
 --- !u!1001 &658472948
 Prefab:
   m_ObjectHideFlags: 0
